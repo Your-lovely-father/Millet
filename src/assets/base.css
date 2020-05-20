@@ -1,0 +1,14 @@
+input {
+    outline: none;
+    border: none;
+}
+div,span,h1,h2,h3,h4,h4,h5,h6,img,i,b,footer,header,article{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl,li,dt,dd {
+    list-style: none;
+}
+a,a:hover {
+    text-decoration: none;
+}
