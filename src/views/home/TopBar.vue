@@ -9,7 +9,7 @@
           <div class="csearch">
             <van-icon name="search" color="#9a9a9a"/>
           </div>
-          <input type="search" placeholder="搜索商品名称">  
+          <input type="search" placeholder="搜索商品名称">
         </div>
         <!-- 右 -->
         <div class="right"><van-icon name="contact" color="#9a9a9a"/></div>
@@ -25,7 +25,7 @@
             <!-- 此时则需要穿的特殊的对象$event,$event是原生事件对象 -->
             <li @click="isClick($event)" v-for="(item, index) in topClassList" :class="{active:isActive == index}" :key="index" :index="index">{{item}}</li>
           </ul>
-      </div>     
+      </div>
 
       <!-- 下拉展开 -->
       <transition name="fade">
@@ -55,7 +55,7 @@ export default {
     return {
       isActive: 0,
       unfold: true,
-      topClassList: ['推荐','手机','智能','电视','笔记本','家电','生活周边']
+      topClassList: ['推荐','手机','智能','电视','笔记本','家电','生活周边1']
     }
   },
   methods: {
@@ -108,7 +108,7 @@ export default {
       }
     }
     // .left {
-      
+
     // }
     .right {
       font-size: 24px;
@@ -126,8 +126,8 @@ export default {
         height: 31px;
         position: absolute;
         font-size: 16px;
-        text-align: center;         
-        line-height: 31px;          
+        text-align: center;
+        line-height: 31px;
       }
       input {
         height: 33px;
@@ -143,7 +143,7 @@ export default {
     position: relative;
     .default {
       overflow: scroll;
-      box-sizing: border-box; 
+      box-sizing: border-box;
       margin-right: 50px;
       position: relative;
       // display: none;
@@ -166,7 +166,7 @@ export default {
           .active {
             border-bottom: 2px solid #ed5b00;
           }
-      }    
+      }
     }
     .more {
           position: absolute;
@@ -195,7 +195,7 @@ export default {
             height: 27px;
             margin: 0 10px 12px 0;
             border-radius: 5px;
-            font-size: 13px; 
+            font-size: 13px;
             border: 1px solid #ccc;
             text-align: center;
             line-height: 27px;
@@ -205,7 +205,7 @@ export default {
         .unfoldActive {
             color: #ff6700;
             border-color: #ff6700;
-            background: #fde0d5; 
+            background: #fde0d5;
           }
       }
     }
